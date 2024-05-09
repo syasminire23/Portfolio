@@ -1,0 +1,330 @@
+/* Resetting default margin and padding for specific elements */
+body,
+h1,
+h2,
+h3,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+.jaro-heading {
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* H2 hover effect */
+.jaro-heading:hover {
+    color: #b05907; /* Change text color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+/* Base styles for the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #152434;
+}
+
+/* Header styles */
+header {
+    background-color: #1b72d0;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.7s;
+}
+
+header nav ul li a:hover {
+    color: #ff7b00;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    background-color: #393db7;
+}
+
+/* Section styles */
+section {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in-out forwards;
+    margin-bottom: 20px;
+}
+
+/* Heading styles */
+h1 {
+    color: #41b053;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #2b5d34;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #2b5d34;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #c8ff00;
+}
+
+/* Paragraph styles */
+p {
+    margin: 10px 0;
+}
+
+/* About section styles */
+#about {
+    background-color: hsla(123, 79%, 78%, 0.733);
+    padding-bottom: 10px;
+}
+
+#about .about-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 200px;
+}
+
+#about .about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Social icons hover effect */
+.social-links a:hover {
+    color: #ff7b00; /* Change color on hover */
+}
+
+
+/* Skills section styles */
+#skills {
+    background-color: #79dadb;
+    padding: 20px; 
+}
+
+#skills ul {
+    list-style-type: none; 
+    padding: 0;
+    text-align: center;
+}
+
+#skills li {
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+#skills li i {
+    margin-right: 10px;
+}
+
+#skills li span {
+    font-weight: bold; 
+    color: #393db7; 
+}
+
+/* Project section styles */
+#projects {
+    background-color: #5cc4a7cb;
+    color: #fff;
+}
+
+.project-text {
+    font-weight: bold;
+}
+
+/* Project text hover styles */
+.project-text:hover {
+    color: #c3115e; /* Change text color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Project image hover effect */
+.project:hover {
+    opacity: 0.7; /* Adjust the opacity to your preference */
+    transition: opacity 0.3s ease; /* Add smooth transition effect */
+}
+
+
+
+/* Hobbies section styles */
+#hobbies {
+    background-color: #a9c7dc;
+    padding: 20px; 
+}
+
+/* Approach section styles */
+#approach {
+    background-color: rgb(179, 205, 201);
+    padding: 20px; 
+}
+
+
+
+/* Contact form input styles */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+
+/* Project box styles */
+.project {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    -webkit-backdrop-filter: blur(11px);
+    backdrop-filter: blur(11px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow: hidden;
+    margin: 20px 30px;
+}
+
+.projectimage {
+    width: 100%;
+    height: 250px;
+}
+
+.fa-solid {
+    font-size: 30px;
+}
+
+.allprojects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Animation for "My Portfolio" text */
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: 0.15em;
+      opacity: 1;
+    }
+}
+
+h1.animated-text {
+    animation: tracking-in-expand 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+/* H1 hover effect */
+.animated-text:hover {
+    color: #59ff00; /* Change text color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+    #about {
+        background-color: #6ae470;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        background-color: #7ec9a7;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #about {
+        background-color: #9ce2e7;
+    }
+}
+
+
+
+/* Footer animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #ddd;
+    border-radius: 15px;
+    animation: slideIn 40s linear infinite; /* Add border-radius for rounded edges */
+}
+
+
+/* Add margin-bottom to Work Philosophy and Contact Me sections */
+
+/* Adjust margin bottom for #contact section */
+#contact {
+    margin-bottom: 5px; /* Adjust as needed */
+}
+
+/* Add padding under the submit button */
+#contact button[type="submit"] {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+
+/* Adjust footer margin-top to match the gap */
+footer {
+    margin-top: 5px; /* Same as the margin-bottom of the sections */
+}
